@@ -19,10 +19,10 @@ class TestMathGame(unittest.TestCase):
         for _ in range(1000):  # Test with a large number multiple times for randomness
             operator = get_random_operator()
             self.assertIn(operator, valid_operators)
-        
 
     def test_arithmetic_operation(self):
-            """Test if the function can correctly create math problems and compute the answers."""
+      """Tests if the function can correctly create math problems and compute the answers."""
+
         test_cases = [
             (5, 2, '+', '5 + 2', 7),
             (8, 3, '-', '8 - 3', 5),
@@ -37,6 +37,7 @@ class TestMathGame(unittest.TestCase):
                 self.assertEqual(problem, expected_problem)
                 self.assertEqual(answer, expected_answer)
                 
+
 
 if __name__ == "__main__":
     unittest.main()
